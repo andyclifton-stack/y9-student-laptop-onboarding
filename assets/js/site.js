@@ -49,7 +49,7 @@ function renderFooter() {
       </div>
       <div>
         <p><strong>Important</strong></p>
-        <p>Final dates and times will be confirmed nearer the time.</p>
+        <p>All laptops must be handed in by Friday 3rd July 2026 to guarantee setup for September.</p>
       </div>
     </footer>
   `;
