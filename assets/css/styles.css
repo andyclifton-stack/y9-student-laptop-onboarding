@@ -196,6 +196,13 @@ button:focus-visible {
   color: #fff;
 }
 
+.page-hero a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+}
+
 .container {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
@@ -533,5 +540,60 @@ li {
 
   .site-nav.open {
     grid-template-columns: 1fr;
+  }
+
+  .requirements-table,
+  .requirements-table thead,
+  .requirements-table tbody,
+  .requirements-table tr,
+  .requirements-table th,
+  .requirements-table td {
+    display: block;
+  }
+
+  .requirements-table {
+    border: 0;
+    background: transparent;
+  }
+
+  .requirements-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+
+  .requirements-table tbody {
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .requirements-table tr {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  .requirements-table td {
+    padding: 0.75rem 0.95rem 0.85rem;
+    border-bottom: 1px solid var(--line);
+    overflow-wrap: anywhere;
+  }
+
+  .requirements-table td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 0.15rem;
+    color: var(--school-blue);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .requirements-table td:last-child {
+    border-bottom: 0;
   }
 }
