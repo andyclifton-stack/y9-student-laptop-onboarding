@@ -45,7 +45,7 @@ function renderFooter() {
       </div>
       <div>
         <p><strong>Need help?</strong></p>
-        <p>Please email <a href="mailto:office@claremontschool.co.uk">office@claremontschool.co.uk</a> for laptop onboarding questions, software requests, or support routes.</p>
+        <p>For questions about student laptop onboarding, please email <a href="mailto:office@claremontschool.co.uk">office@claremontschool.co.uk</a>.</p>
       </div>
       <div>
         <p><strong>Important</strong></p>
