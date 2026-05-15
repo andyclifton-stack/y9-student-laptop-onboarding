@@ -111,7 +111,7 @@ button:focus-visible {
   align-items: center;
   justify-content: flex-end;
   gap: 0.25rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .site-nav a {
@@ -472,13 +472,9 @@ li {
   font-weight: 700;
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1500px) {
   .site-header {
-    align-items: flex-start;
-  }
-
-  .brand span {
-    display: none;
+    align-items: center;
   }
 
   .nav-toggle {
@@ -500,7 +496,14 @@ li {
 
   .site-nav.open {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.1rem 0.75rem;
+  }
+}
+
+@media (max-width: 1120px) {
+  .brand span {
+    display: none;
   }
 }
 
