@@ -45,11 +45,11 @@ function renderFooter() {
       </div>
       <div>
         <p><strong>Need help?</strong></p>
-        <p>Please contact the school office for laptop onboarding questions, software requests, or support routes.</p>
+        <p>Please email <a href="mailto:office@claremontschool.co.uk">office@claremontschool.co.uk</a> for laptop onboarding questions, software requests, or support routes.</p>
       </div>
       <div>
         <p><strong>Important</strong></p>
-        <p>Final dates, times and the device submission form link will be confirmed nearer the time.</p>
+        <p>Final dates and times will be confirmed nearer the time.</p>
       </div>
     </footer>
   `;

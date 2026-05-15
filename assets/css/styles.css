@@ -467,6 +467,11 @@ li {
   margin-bottom: 0.5rem;
 }
 
+.site-footer a {
+  color: #fff;
+  font-weight: 700;
+}
+
 @media (max-width: 1120px) {
   .site-header {
     align-items: flex-start;
