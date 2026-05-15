@@ -212,7 +212,7 @@ button:focus-visible {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  gap: clamp(1rem, 2vw, 1.35rem);
 }
 
 .two-col {
@@ -223,7 +223,7 @@ button:focus-visible {
 }
 
 h2 {
-  margin: 0 0 1rem;
+  margin: 0 0 1.2rem;
   color: var(--navy);
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.8rem, 3vw, 2.6rem);
@@ -232,10 +232,28 @@ h2 {
 }
 
 h3 {
-  margin: 1.5rem 0 0.45rem;
+  margin: 1.65rem 0 0.65rem;
   color: var(--school-blue);
   font-size: 1.12rem;
   line-height: 1.25;
+}
+
+p + h2,
+ul + h2,
+ol + h2,
+.grid + h2,
+.timeline + h2,
+.requirements-table + h2,
+.callout + h2,
+.download-list + h2 {
+  margin-top: clamp(2.25rem, 5vw, 3.5rem);
+}
+
+p + h3,
+ul + h3,
+ol + h3,
+.callout + h3 {
+  margin-top: 1.9rem;
 }
 
 p {
@@ -256,6 +274,7 @@ li {
   max-width: 780px;
   color: var(--muted);
   font-size: 1.08rem;
+  margin-bottom: 1.5rem;
 }
 
 .button-row {
@@ -302,7 +321,7 @@ li {
 }
 
 .card {
-  padding: 1.25rem;
+  padding: clamp(1.35rem, 2.2vw, 1.7rem);
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
@@ -313,12 +332,24 @@ li {
   margin-top: 0;
 }
 
+.card p:last-child,
+.card ul:last-child,
+.card ol:last-child,
+.step p:last-child,
+.download-item p:last-child {
+  margin-bottom: 0;
+}
+
 .callout {
-  margin: 1.5rem 0;
-  padding: 1.25rem;
+  margin: 1.75rem 0;
+  padding: clamp(1.25rem, 2vw, 1.55rem);
   border-left: 6px solid var(--orange);
   border-radius: 6px;
   background: var(--orange-soft);
+}
+
+.callout p:last-child {
+  margin-bottom: 0;
 }
 
 .callout.blue {
@@ -332,13 +363,13 @@ li {
 
 .timeline {
   display: grid;
-  gap: 1rem;
+  gap: clamp(1rem, 2vw, 1.35rem);
   counter-reset: step;
 }
 
 .step {
   position: relative;
-  padding: 1.2rem 1.2rem 1.2rem 4rem;
+  padding: clamp(1.3rem, 2vw, 1.65rem) clamp(1.3rem, 2vw, 1.65rem) clamp(1.3rem, 2vw, 1.65rem) 4.25rem;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
@@ -363,7 +394,7 @@ li {
 .requirements-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1.5rem 0;
+  margin: 1.75rem 0;
   background: #fff;
   border: 1px solid var(--line);
 }
@@ -387,7 +418,7 @@ li {
 
 .faq-list details {
   border-bottom: 1px solid var(--line);
-  padding: 1rem 0;
+  padding: 1.2rem 0;
 }
 
 .faq-list summary {
@@ -398,7 +429,7 @@ li {
 
 .download-list {
   display: grid;
-  gap: 1rem;
+  gap: clamp(1rem, 2vw, 1.35rem);
 }
 
 .download-item {
@@ -406,7 +437,7 @@ li {
   justify-content: space-between;
   gap: 1rem;
   align-items: center;
-  padding: 1.25rem;
+  padding: clamp(1.35rem, 2.2vw, 1.7rem);
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
