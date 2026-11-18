@@ -131,20 +131,14 @@ button:focus-visible {
 
 .nav-toggle {
   display: none;
-  width: 44px;
+  min-width: 60px;
+  font: inherit;
+  font-weight: bold;
   height: 44px;
   border: 1px solid var(--line);
   border-radius: 6px;
   background: #fff;
   color: var(--navy);
-}
-
-.nav-toggle span:not(.sr-only) {
-  display: block;
-  width: 20px;
-  height: 2px;
-  margin: 4px auto;
-  background: currentColor;
 }
 
 .hero {
@@ -238,7 +232,9 @@ h2 {
   letter-spacing: 0;
 }
 
-h3 {
+h3,
+.card-heading {
+  font-family: inherit;
   margin: 1.65rem 0 0.65rem;
   color: var(--school-blue);
   font-size: 1.12rem;
@@ -335,7 +331,8 @@ li {
   box-shadow: 0 8px 22px rgba(0, 11, 77, 0.06);
 }
 
-.card h3:first-child {
+.card h3:first-child,
+.card-heading:first-child {
   margin-top: 0;
 }
 
@@ -495,6 +492,10 @@ li {
     left: 0;
     right: 0;
     top: 100%;
+    max-height: calc(100vh - 100%);
+    max-height: calc(100dvh - 100%);
+    overflow-y: auto;
+    overscroll-behavior: contain;
     padding: 0.5rem 1rem 1rem;
     background: #fff;
     border-bottom: 1px solid var(--line);

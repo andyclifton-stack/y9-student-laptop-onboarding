@@ -28,8 +28,7 @@ function renderHeader() {
         <span>Student Laptop Onboarding</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span><span></span>
-        <span class="sr-only">Menu</span>
+        Menu
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">${nav}</nav>
     </header>
@@ -49,7 +48,7 @@ function renderFooter() {
       </div>
       <div>
         <p><strong>Important</strong></p>
-        <p>All laptops must be handed in by Friday 3rd July 2026 to guarantee setup for September.</p>
+        <p>Register first, then sign the DocuSign agreement we email you. Only then can you drop off the laptop at either school office, by Wednesday 7 July 2027. See the <a href="hand-in-collection.html">hand-in instructions</a>.</p>
       </div>
     </footer>
   `;
